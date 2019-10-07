@@ -424,6 +424,89 @@ _W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":
     <div id="customer-accounts-app"></div>
     <script src="https://cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1234"></script>
 
-		
+	<style>
+.eld-wrapper{
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(239, 230, 230,0.8); /* Black w/ opacity */
+  display:none;
+  padding-top:150px;
+}
+.eld-modal {
+  width:40%;
+  box-sizing: border-box;
+  padding:20px;
+  margin:auto;
+  margin-top:60px;
+  min-width: 600px;
+  border-radius:10px;
+  background:white url("https://www.eccpsu.com/uploads/1/1/8/6/118626973/final-new-logo.png") no-repeat;
+  background-size:contain;
+}
+
+.eld-modal h2 {
+  text-align:right;
+  color:#27325b;
+  font-family: "Montserrat" !important;
+  font-size:1.8em;
+}
+
+.eld-modal a{
+  color:white;
+  text-decoration:none;
+  font-size:1.6em;
+  padding:2px 4px;
+  display:inline-block;
+  background:#e7af58;
+  border-radius:5px;
+}
+
+.eld-modal button{
+  background-color:red;
+  border:none;
+  color:white;
+  margin:0;
+  padding:2px 4px;
+  font-size:1.6em;
+  border-radius:5px
+}
+
+.eld-modal button:hover, .eld-modal a:hover{
+  filter: brightness(93%);
+}
+
+.eld-modal--controls{
+  display:inline-box;
+  text-align: right;
+}
+</style>
+<div class="eld-wrapper">
+  <div class="eld-modal">
+    <h2>SignUp For The ELD Case Competition</h2>
+    <div class="eld-modal--controls">
+      <a href="https://forms.gle/V3s4XAcGx3ZCfZCd9" target="_blank">SignUp Here</a>
+      <button class="eld-close">close</button>
+    <div>
+  </div>
+</div>
+<script>
+  function eldModal(){
+  var modal =  document.getElementsByClassName("eld-wrapper")[0];
+  modal.style.display = "block";
+  
+  var close = modal.getElementsByClassName("eld-close")[0];
+  close.addEventListener("click", function(){
+    var parent =  document.getElementsByClassName("eld-wrapper")[0]; 
+    parent.style.display= "none";
+  });
+}
+
+window.setTimeout(eldModal, 1500);
+</script>	
 	</body>
 </html>
