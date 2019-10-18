@@ -1,273 +1,31 @@
 <html>
 	<head>
-		<title>SEDTAPP</title>
-		<style>
-		body {
-	padding-left: 0;
-	padding-right: 0;
-	margin: 0;
-}
-
-#navBar {
-	width: 100%;
-	height: 40px;
-	margin-right: auto;
-	margin-left: auto;
-	background-color: #f1f1f1;
-}
-
-#logoBar {
-	width: 100%;
-	height: 90px;
-	position: relative;
-	margin-right: auto;
-	margin-left: auto;
-	background-color: #f1f1f1;
-}
-
-#logoContainer {
-	height: 100%;
-	width: 14%;
-	position: absolute;
-	display: inline-block;
-}
-
-#logoContainer > img {
-	height: 90%;
-	position: absolute;
-	top: 5%;
-	bottom: 5%;
-	margin-left: 5px;
-	margin-right: 0;
-}
-
-#titleContainer {
-	height: 100%;
-	display: inline;
-	position: absolute;
-	left: 5%;
-	color: #009900;
-	font-weight: bold;
-	font-family: "arial";
-	font-size: 30px;
-	
-}
-#titleContainer > p {
-}
-
-#separator {
-	width: 100%;
-	height: 5px;
-	background-color: #009900;
-}
-
-#buttonContainer {
-	width: 40%;
-	height: 100%;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 2%;
-}
-
-.navButton {
-  padding-left:3%;
-	height: 100%;
-	display: inline-flex;
-	margin: 0;
-	background-color: #f1f1f1;
-	float: left;
-	transition: 0.4s;
-	line-height: 100%;
-	color: #8e8e8e;
-}
-
-.navButton > div {
-	font-family: "arial";
-	font-size: 15px;
-	font-weight: bold;
-	text-align: center;
-	margin: auto;
-}
-
-.navButton:hover {
-	color: #328abe;
-}
-.navButton:hover > .buttonUnderline {
-	background-color: #328abe;
-}
-
-#briefDescription {
-	font-size: 40px;
-	font-family: "arial";
-	color: #8e8e8e;
-	margin-top: 5%;
-}
-#briefDescription > span {
-	display: block;
-}
-#doneRight {
-	color: #82D5DE;
-}
-
-#smallerCaptions {
-	margin-top: 2%;
-	width: 50%;
-	font-family: "arial";
-	font-size: 16px;
-	color: #8e8e8e;
-}
-
-#weProvideHolder {
-	display: inline-flex;
-	margin-right: 2%;
-	margin-top: 5%;
-}
-
-#weProvide {
-	font-family: "arial";
-	font-size: 40px;
-	color: #8e8e8e;
-	position: relative;
-}
-#weProvide > div {
-	display: block;
-	text-align: left;
-}
-
-#phraseContainer {
-	width: 80%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	margin-top: 5%;
-	margin-bottom: 5%;
-	display: inline-flex;
-}
-
-.phrase {
-	width: 33%;
-	color: #8e8e8e;
-	font-family: "arial";
-	font-size: 30px;
-	text-align: center;
-	position: relative;
-	display: inline-block;
-	vertical-align: top;
-}
-
-.underline {
-	width: 65%;
-	height: 5px;
-	background-color: #82D5DE;
-	display: block;
-	margin: 4% auto;
-}
-
-#upToDate {
-}
-#betterInfo {
-}
-#lowPricing {
-}
-
-.description {
-	font-size: 16px;
-	text-align: left;
-	width: 65%;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-#footer {
-	width: 100%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	background-color: #f1f1f1;
-	text-align: center;
-	font-family: "arial";
-}
-
-
-.content{
-  padding: 30px;
-  width:85%;
-  margin:auto;
-  font-size:1.5em;
-  font-family: "arial";
-}
-
-.content h2{
-  font-size:1.7em;
-  color:#009900;
-}
-
-.content h3{
-  color:#009900;
-}
-
-#first{
- color: #DD6A01;
-}
-#second{
-  color: #009966;
-}
-#third{
-  color:#EC8C00;
-}
-#fourth{
-  color:#33cc33;
-}
-
-.value{
-  width:47%;
-  margin-left:2%;
-  min-width:500px;
-  display:inline-block;
-}
-
-
-
-
-		</style>
+		<title>GreenBell</title>
+		<link rel="stylesheet" type="text/css" href="./css/index.css">
 	</head>
 
 	<body>
+	 <div id="wrapper">
 	<div id = "logoBar">
-		<div id = "logoContainer">
-			<img src = "https://www.freelogodesign.org/file/app/client/thumb/cc4ca4e0-52f9-4325-b79a-d7636fcefb26_200x200.png?1571103633959">
-		</div>
-		<div id = "titleContainer">
-			<p>SEDTAPP Home Appliances Inc.</p>
-		</div>
-	</div>
+			<img src = "./img/logo">
+			<span>GreenBell Inc.</span>
 	</div>
 	<div id = "separator"></div>
 	<div id = "navBar">
-		<div id = "buttonContainer">
-			<div class = "navButton" id = "home">
-				<div><span>Home</span></div>
-			</div>
-			<div class = "navButton" id = "howtobuy">
-				<div><span>Company Values</span></div>
-			</div>
-			<div class = "navButton" id = "about">
-				<div><span>Company Financials</span></div>
-			</div>
-			<div class = "navButton" id = "contact">
-				<div><span>Latest News</span></div>
-			</div>
-		</div>
+		 <a href="index.html">Company Values</a>
+		 <a href="./FinancialStatement.xlsx">Company Financials</a>
+		 <a href="latest.html">Latest News</a>
 	</div>
 
 <div class="content">
   <h2>What is our mission? </h2>
-  <p>At SEDTAPP Home Appliances Inc., we strive to support a global industrial area by improving how we <span id="first">build,</span> <span id="second">move,</span> <span id="third">power</span> and <span id="fourth">disrupt</span>. Since our company strives on an upliftment culture, the foundation of SEDTAPP Home Appliances Inc.'s core values are built on the following roots:
+  <p>At GreenBell Inc., we strive to support a global industrial area by improving how we <span id="first">build,</span> <span id="second">move,</span> <span id="third">power</span> and <span id="fourth">disrupt</span>. Since our company strives on an upliftment culture, the foundation of GreenBell core values are built on the following roots:
 </p>
     
-    
+  <div class="val-cover"> 
   <div class="value">
   <h3>Success is driven by our customers</h3>
-  <p>We believe that once our customers use our products or services for the first time, our impeccable quality will drive them to become a customer for life.</p>
+  <p>We believe that once our customers use our products or services for the first time, our impeccable quality will drive them to become a customer for life. </p>
   </div>
     
     
@@ -278,20 +36,20 @@
       
       
   <div class="value">    
-  <h3>Be the substance of ensuring environmental impact is minimized</h3>
+  <h3>Minimize enviromental impact</h3>
   <p>We are the generation that is committed to reducing waste through environmentally conscious methods throughout the production process so that future generations can continue to prosper through sustainability.</p>
   </div>
     
     
   <div class="value">  
   <h3>Every idea matters</h3>
-  <p>Behind every idea is a person’s individualistic background comprising of their thought processes and experiences that shape them. No matter where the idea originates from, it is never cast aside as infeasible at SEDTAPP Home Appliances Inc..</p>
+  <p>Behind every idea is a person’s individualistic background comprising of their thought processes and experiences that shape them. No matter where the idea originates from, it is never cast aside as infeasible at GreenBell Inc..</p>
   </div>
     
     
   <div class="value">  
   <h3>Always on the search for innovation</h3>
-  <p>A jump is equal to 3 steps. At SEDTAPP Home Appliances Inc., we strive to jump towards the future.</p>
+  <p>A jump is equal to 3 steps. At GreenBell Inc., we strive to jump towards the future.</p>
   </div>
     
     
@@ -299,11 +57,12 @@
   <h3>Embrace speed and excellence</h3>
   <p>As we aim to grow fast, we continue to surpass standards in our products’ and services’ quality. </p>
   </div>
+  </div>
 </div>
-
-	<div id = "separator"></div>
+</div>
 	<div id = "footer">
-		<span>©1997-2019 Pacific Northwest X-Ray Inc. - Sales & Marketing Division - All Rights Reserved</span>
+	<div id = "separator"></div>
+		<span>©1997-2019 GreenBell Inc. - Sales & Marketing Division - All Rights Reserved</span>
 	</div>	
 	</body>
 </html>
